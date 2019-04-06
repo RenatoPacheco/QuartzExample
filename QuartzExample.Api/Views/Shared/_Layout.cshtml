@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+        <meta name="robots" content="noindex">
+        <meta name="googlebot" content="noindex">
+        @RenderSection("metas", false)
+        <title>@ViewData["Title"]</title>
+        @RenderSection("styles", false)
+    </head>
+    <body role="document">
+        @RenderBody()    
+        @RenderSection("scripts", false)
+    </body>
+</html>
