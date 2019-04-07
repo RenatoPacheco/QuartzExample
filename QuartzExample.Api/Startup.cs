@@ -18,6 +18,7 @@ namespace QuartzExample.Api
             // Api config
             WebApiConfig.Register(config);
             JsonConfig.Register(config);
+            SchedulerConfig.Register();
 
             app.UseCors(CorsOptions.AllowAll);
             app.UseWebApi(config);
