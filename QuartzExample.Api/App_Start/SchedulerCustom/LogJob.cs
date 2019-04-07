@@ -3,6 +3,7 @@ using QuartzExample.Api.Helpers;
 using System;
 using System.Diagnostics;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace QuartzExample.Api.App_Start.SchedulerCustom
 {
@@ -17,7 +18,7 @@ namespace QuartzExample.Api.App_Start.SchedulerCustom
 
         private readonly string folder;
 
-        public void Execute(IJobExecutionContext context)
+        public async Task Execute(IJobExecutionContext context)
         {
             string file = string.Format("{0}/{1}.txt", folder, DateTime.Now.ToString("yyyyMMdd"));
             string value = string.Format("Register log: {0}{1}", DateTime.Now.ToString(), Environment.NewLine);

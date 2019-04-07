@@ -10,7 +10,7 @@ namespace QuartzExample.Api
         // To creat cron schedule  http://www.cronmaker.com/
         public static void Register()
         {
-            IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler();
+            IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler().Result;
 
             scheduler.Start();
 
