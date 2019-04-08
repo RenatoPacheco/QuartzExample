@@ -11,7 +11,7 @@ namespace QuartzExample.Api
         public static void Register()
         {
             IScheduler scheduler = StdSchedulerFactory.GetDefaultScheduler().Result;
-
+            scheduler.ListenerManager.AddSchedulerListener(new LogSchedulerListener());
             scheduler.Start();
 
             IJobDetail job = JobBuilder.Create<LogJob>().Build();

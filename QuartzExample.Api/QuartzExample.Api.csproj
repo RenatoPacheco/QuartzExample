@@ -142,6 +142,7 @@
     <Compile Include="App_Start\JsonConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\SchedulerConfig.cs" />
+    <Compile Include="App_Start\SchedulerCustom\LogSchedulerListener.cs" />
     <Compile Include="App_Start\SchedulerCustom\LogJob.cs" />
     <Compile Include="App_Start\ViewEnginesConfig.cs" />
     <Compile Include="App_Start\ViewEnginesCursom\RazorViewEngineCustom.cs" />
